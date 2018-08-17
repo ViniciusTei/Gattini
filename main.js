@@ -8,17 +8,26 @@ let win;
 
 function createWindow(){
   //Create a new instance of the object window
-  win = new BrowserWindow();
+  win = new BrowserWindow({
+    autoHideMenuBar: true,
+    show: false
+  });
   //Load html file with the design of the window
   win.loadURL(url.format({
     pathname: path.join(__dirname, 'login.html'),
     protocol: 'file',
     slashes: true
   }));
+
+  //win.webContents.openDevTools();
   //Set the object to null so it can be closed
   win.on('close', () => {
     win = null;
   } )
+
+  win.on('ready-to-show', () => {
+    win.show();
+  })
 }
 
 //The parameter ready means that all objects have been initialized
