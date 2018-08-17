@@ -1,3 +1,6 @@
+.row{
+  display: flex;
+}
 body {
   background-color: #ffffff;
 
