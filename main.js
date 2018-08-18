@@ -1,4 +1,5 @@
 const electron = require("electron");
+const remote = electron.remote;
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 const path = require("path");
@@ -10,11 +11,12 @@ function createWindow(){
   //Create a new instance of the object window
   win = new BrowserWindow({
     autoHideMenuBar: true,
-    show: false
+    show: false,
+    frame: false
   });
   //Load html file with the design of the window
   win.loadURL(url.format({
-    pathname: path.join(__dirname, 'login.html'),
+    pathname: path.join(__dirname, 'src/login.html'),
     protocol: 'file',
     slashes: true
   }));
