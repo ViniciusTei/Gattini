@@ -12,14 +12,10 @@ function createWindow(){
   win = new BrowserWindow({
     autoHideMenuBar: true,
     show: false,
-    frame: false
+    frame: true
   });
   //Load html file with the design of the window
-  win.loadURL(url.format({
-    pathname: path.join(__dirname, 'src/login.html'),
-    protocol: 'file',
-    slashes: true
-  }));
+  win.loadFile('src/login.html')
 
   //win.webContents.openDevTools();
   //Set the object to null so it can be closed

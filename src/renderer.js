@@ -11,7 +11,7 @@ btnLogin.addEventListener('click', function(){
     let menuWin = new BrowserWindow({
       autoHideMenuBar: true,
       show: false,
-      frame: false
+      frame: true
     });
     //Load html file with the design of the window
     menuWin.loadURL(url.format({
