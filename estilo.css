@@ -42,4 +42,14 @@ body {
 
 .content {
   padding-top: 10%;
+  align-items: center;
+  width: 90%;
+  align-self: center;
+  align-content: center;
+}
+
+.form-ag {
+  display:block;
+  margin-bottom: 10px;
+  width: 100%;
 }
