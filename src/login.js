@@ -23,7 +23,7 @@ btnLogin.addEventListener('click', function(){
       slashes: true
     }));
 
-    menuWin.openDevTools();
+    //menuWin.openDevTools();
 
     //Set the object to null so it can be closed
     menuWin.on('close', () => {

@@ -11,9 +11,9 @@ btnCadastroUser.addEventListener('click', function () {
     show: false
   })
 
-  cadastroUserWin.loadFile('cadastro_usuarios/cadastroUser.html');
+  cadastroUserWin.loadFile('src/cadastro_usuarios/cadastroUser.html');
 
-  cadastroUserWin.openDevTools();
+  //cadastroUserWin.openDevTools();
 
   //Set the object to null so it can be closed
   cadastroUserWin.on('close', () => {
