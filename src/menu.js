@@ -1,58 +1,27 @@
-const remote = require('electron').remote;
+const electron = require('electron');
+const BrowserWindow = electron.remote.BrowserWindow;
+const app = electron;
 
-(function handleWindowControls() {
-    // When document has loaded, initialise
-    document.onreadystatechange = () => {
-        if (document.readyState == "complete") {
-            init();
-        }
-    };
+const btnCadastroUser = document.getElementById('btnCadastroUser');
 
-    function init() {
-        let window = remote.getCurrentWindow();
-        const minButton = document.getElementById('min-button'),
-            maxButton = document.getElementById('max-button'),
-            restoreButton = document.getElementById('restore-button'),
-            closeButton = document.getElementById('close-button');
+btnCadastroUser.addEventListener('click', function () {
 
-        minButton.addEventListener("click", event => {
-            window = remote.getCurrentWindow();
-            window.minimize();
-        });
+  let cadastroUserWin = new BrowserWindow({
+    autoHideMenuBar: true,
+    show: false
+  })
 
-        maxButton.addEventListener("click", event => {
-            window = remote.getCurrentWindow();
-            window.maximize();
-            toggleMaxRestoreButtons();
-        });
+  cadastroUserWin.loadFile('cadastro_usuarios/cadastroUser.html');
 
-        restoreButton.addEventListener("click", event => {
-            window = remote.getCurrentWindow();
-            window.unmaximize();
-            toggleMaxRestoreButtons();
-        });
+  cadastroUserWin.openDevTools();
 
-        // Toggle maximise/restore buttons when maximisation/unmaximisation
-        // occurs by means other than button clicks e.g. double-clicking
-        // the title bar:
-        toggleMaxRestoreButtons();
-        window.on('maximize', toggleMaxRestoreButtons);
-        window.on('unmaximize', toggleMaxRestoreButtons);
+  //Set the object to null so it can be closed
+  cadastroUserWin.on('close', () => {
+    cadastroUserWin = null;
+  } )
 
-        closeButton.addEventListener("click", event => {
-            window = remote.getCurrentWindow();
-            window.close();
-        });
-
-        function toggleMaxRestoreButtons() {
-            window = remote.getCurrentWindow();
-            if (window.isMaximized()) {
-                maxButton.style.display = "none";
-                restoreButton.style.display = "flex";
-            } else {
-                restoreButton.style.display = "none";
-                maxButton.style.display = "flex";
-            }
-        }
-    }
-})();
+  cadastroUserWin.on('ready-to-show', () => {
+    cadastroUserWin.maximize();
+    cadastroUserWin.show();
+  })
+})
