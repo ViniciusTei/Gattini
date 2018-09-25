@@ -17,6 +17,7 @@ body {
   color: rgb(255, 255, 255);
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
+  padding: 1rem;
 }
 
 #hd {
@@ -49,4 +50,11 @@ body {
 
 .content {
   padding-top: 10%;
+}
+
+.margin-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 2px solid rgb(150, 151, 154);
+  border-radius: 5px;
 }
