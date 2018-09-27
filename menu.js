@@ -23,7 +23,7 @@ btnLogin.addEventListener('click', function(){
   } )
 
   win.on('ready-to-show', () => {
-    win.maximize();
+    //win.maximize();
     win.show();
   })
 

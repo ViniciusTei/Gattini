@@ -41,37 +41,200 @@
 
       <div class="content container row">
 
-        <div class="btn-group-vertical col-lg-4 col-sm-4 col-md-4 col-xs-4" role="group" aria-label="...">
+        <!--Barra lateral -->
+        <div id="menu_bar" class="btn-group-vertical" role="group" aria-label="...">
           <button type="button" class="btn btn-default">Cadastro de Usuários</button>
           <button type="button" class="btn btn-default">Cadastro de Pacientes</button>
           <button type="button" class="btn btn-default">Cadastro de Questionários</button>
         </div>
 
-        <div>
+        <!--Formulário--->
+        <div class="content">
           <form role="search">
-            <div class="form-group col-lg-8 col-sm-8 col-md-8 col-xs-8">
-              <div class="form-group">
-                <label for="nome">Nome Completo</label>
-                <input id="nome" type="text" class="form-control form-ag" placeholder="Nome Completo">
+
+            <div class="form-group">
+
+              <div class="row">
+
+                  <div class="form-group">
+                    <label class="form-ag" for="nome">Nome Completo</label>
+                    <input id="nome" type="text" class="form-control form-ag" placeholder="Nome Completo">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-ag" for="pront">Prontuário</label>
+                    <input id="pront" type="text" class="form-control form-ag" placeholder="Prontuário">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-ag" for="cad">Data de Cadastro</label>
+                    <input id="cad" type="date" class="form-control form-ag" placeholder="Cadastro">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-ag" for="dob">Data de Nascimento</label>
+                    <input id="dob" type="date" class="form-control form-ag" placeholder="Data de Nascimento">
+                  </div>
+
+                  <div class="checkbox form-ag">
+                    <label><input type="checkbox" value="">Inativo</label>
+                  </div>
+
+                </div>
+
+              <div class="row">
+
+                  <div class="form-group">
+                    <label class="form-ag" for="sexo">Sexo</label>
+                    <select class="form-control form-ag" id="sexo">
+                      <option>Masculino</option>
+                      <option>Feminino</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-ag" for="estcivil">Estado Civil</label>
+                    <select class="form-control form-ag" id="estcivil">
+                      <option>Solteiro(a)</option>
+                      <option>Casado(a)</option>
+                      <option>Divorciado(a)</option>
+                      <option>Viúvo(a)</option>
+                      <option>União estável</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-ag" for="cor">Cor</label>
+                    <select class="form-control form-ag" id="cor">
+                      <option>Preto</option>
+                      <option>Branco</option>
+                      <option>Pardo</option>
+                      <option>Amarelo</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-ag" for="nat">Naturalidade</label>
+                    <input id="nat" type="text" class="form-control form-ag" placeholder="Naturalidade">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-ag" for="graui">Grau de Instrução</label>
+                    <select class="form-control form-ag" id="graui">
+                      <option>Ensino médio incompleto</option>
+                      <option>Ensino médio completo</option>
+                      <option>Ensino superior incompleto</option>
+                      <option>Ensino superior completo</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-ag" for="rg">Identidade</label>
+                    <input id="rg" type="text" class="form-control form-ag" placeholder="RG">
+                  </div>
+
+                </div>
+
+              <div class="row">
+
+                    <div class="form-group">
+                        <label class="form-ag" for="cpf">CPF</label>
+                        <input id="cpf" type="text" class="form-control form-ag" placeholder="CPF">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-ag" for="prof">Profissão</label>
+                        <input id="prof" type="text" class="form-control form-ag" placeholder="Profissão">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-ag" for="email">Email</label>
+                        <input id="email" type="text" class="form-control form-ag" placeholder="Email">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-ag" for="indicado">Indicado por:</label>
+                        <input id="indicado" type="text" class="form-control form-ag" placeholder="Indicado por">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-ag" for="logradouro">Logradouro</label>
+                        <input id="logradouro" type="text" class="form-control form-ag" placeholder="Logradouro">
+                    </div>
+
+                </div>
+
+              <div class="row">
+
+                  <div class="form-group">
+                      <label class="form-ag" for="complemento">Complemento</label>
+                      <input id="complemento" type="text" class="form-control form-ag" placeholder="Complemento">
+                  </div>
+
+                  <div class="form-group">
+                      <label class="form-ag" for="bairro">Bairro</label>
+                      <input id="bairro" type="text" class="form-control form-ag" placeholder="Bairro">
+                  </div>
+
+                  <div class="form-group">
+                      <label class="form-ag" for="uf">UF</label>
+                      <input id="uf" type="text" class="form-control form-ag" placeholder="UF">
+                  </div>
+
+                  <div class="form-group">
+                      <label class="form-ag" for="cep">CEP</label>
+                      <input id="cep" type="text" class="form-control form-ag" placeholder="CEP">
+                  </div>
+
+                  <div class="form-group">
+                      <label class="form-ag" for="tel">Telefone(s)</label>
+                      <input id="tel" type="text" class="form-control form-ag" placeholder="Telefone(s)">
+                  </div>
+
+                </div>
+
+              <div class="row">
+
+                  <div class="form-group">
+                      <label class="form-ag" for="obs">Observações</label>
+                      <input id="obs" type="text" class="form-control form-ag" placeholder="Observações">
+                  </div>
+
+                </div>
+
+              <div class="row">
+                <label class="form-ag">Dados do Cônjuge</label>
               </div>
-              <div class="form-group">
-                <label for="dob">Data de Nascimento</label>
-                <input id="dob" type="date" class="form-control form-ag" placeholder="Data de Nascimento">
+
+              <div class="row">
+
+                <div class="form-group">
+                  <label class="form-ag" for="nome_c">Nome Cônjuge</label>
+                  <input id="nome_c" type="text" class="form-control form-ag" placeholder="Nome Cônjuge">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-ag" for="dob_C">Data de Nascimento</label>
+                  <input id="dob_C" type="date" class="form-control form-ag" placeholder="Data de Nascimento">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-ag" for="prof_c">Profissão</label>
+                  <input id="prof_c" type="text" class="form-control form-ag" placeholder="Profissão Cônjuge">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-ag" for="tel_c">Telefone(s) Cônjuge</label>
+                  <input id="tel_c" type="text" class="form-control form-ag" placeholder="Telefone(s) Cônjuge">
+                </div>
+
+                <button type="submit" class="btn btn-default gtt-btn">Finalizar Cadastro</button>
               </div>
-              <div class="form-group">
-                <label for="naome_mae">Nome da Mãe</label>
-                <input type="text" class="form-control form-ag" placeholder="Nome da Mãe">
-              </div>
-              <div class="form-group">
-                <label for="nome_pai">Nome do Pai</label>
-                <input id="nome_pai" type="text" class="form-control form-ag" placeholder="Nome do Pai">
-              </div>
+
             </div>
-            <button type="submit" class="btn btn-default">Finalizar Cadastro</button>
+
           </form>
         </div>
-
-      </div>
 
     </div>
 
