@@ -2,8 +2,6 @@ const electron = require("electron");
 const remote = electron.remote;
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
-const path = require("path");
-const url = require("url");
 
 let win;
 
@@ -17,13 +15,14 @@ function createWindow(){
   //Load html file with the design of the window
   win.loadFile('src/login.html')
 
-  //win.webContents.openDevTools();
+  win.webContents.openDevTools();
   //Set the object to null so it can be closed
   win.on('close', () => {
     win = null;
   } )
 
   win.on('ready-to-show', () => {
+    win.maximize();
     win.show();
   })
 }
