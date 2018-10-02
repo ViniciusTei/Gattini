@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Cadastro Pacientes</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+
+      <div id="hd" class="panel panel-heading row">
+        <div>
+          <h1 id="title">GATTINI</h1>
+        </div>
+      </div>
+
+      <div id="info_cadpac" class="label_center">
+        <h3>Cadastro de Pacientes</h3>
+      </div>
+
+      <div class="content container row">
+
+        <!--Barra lateral -->
+        <div id="menu_bar" class="btn-group-vertical" role="group" aria-label="...">
+          <button type="button" class="btn btn-default">Cadastro de Usuários</button>
+          <button type="button" class="btn btn-default">Cadastro de Pacientes</button>
+          <button type="button" class="btn btn-default">Cadastro de Questionários</button>
+        </div>
+
+        <!--Formulário--->
+        <div class="content">
+          <form role="search">
+
+            <div class="form-group">
+
+              <div class="row">
+
+                  <div class="form-group">
+                    <label class="form-ag" for="nome">Nome Completo</label>
+                    <input id="nome" type="text" class="form-control form-ag" placeholder="Nome Completo">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-ag" for="pront">Prontuário</label>
+                    <input id="pront" type="text" class="form-control form-ag" placeholder="Prontuário">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-ag" for="cad">Data de Cadastro</label>
+                    <input id="cad" type="date" class="form-control form-ag" placeholder="Cadastro">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-ag" for="dob">Data de Nascimento</label>
+                    <input id="dob" type="date" class="form-control form-ag" placeholder="Data de Nascimento">
+                  </div>
+
+                  <div class="checkbox form-ag">
+                    <label><input type="checkbox" value="">Inativo</label>
+                  </div>
+
+                </div>
+
+              <div class="row">
+
+                  <div class="form-group">
+                    <label class="form-ag" for="sexo">Sexo</label>
+                    <select class="form-control form-ag" id="sexo">
+                      <option>Masculino</option>
+                      <option>Feminino</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-ag" for="estcivil">Estado Civil</label>
+                    <select class="form-control form-ag" id="estcivil">
+                      <option>Solteiro(a)</option>
+                      <option>Casado(a)</option>
+                      <option>Divorciado(a)</option>
+                      <option>Viúvo(a)</option>
+                      <option>União estável</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-ag" for="cor">Cor</label>
+                    <select class="form-control form-ag" id="cor">
+                      <option>Preto</option>
+                      <option>Branco</option>
+                      <option>Pardo</option>
+                      <option>Amarelo</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-ag" for="nat">Naturalidade</label>
+                    <input id="nat" type="text" class="form-control form-ag" placeholder="Naturalidade">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-ag" for="graui">Grau de Instrução</label>
+                    <select class="form-control form-ag" id="graui">
+                      <option>Ensino médio incompleto</option>
+                      <option>Ensino médio completo</option>
+                      <option>Ensino superior incompleto</option>
+                      <option>Ensino superior completo</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-ag" for="rg">Identidade</label>
+                    <input id="rg" type="text" class="form-control form-ag" placeholder="RG">
+                  </div>
+
+                </div>
+
+              <div class="row">
+
+                    <div class="form-group">
+                        <label class="form-ag" for="cpf">CPF</label>
+                        <input id="cpf" type="text" class="form-control form-ag" placeholder="CPF">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-ag" for="prof">Profissão</label>
+                        <input id="prof" type="text" class="form-control form-ag" placeholder="Profissão">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-ag" for="email">Email</label>
+                        <input id="email" type="text" class="form-control form-ag" placeholder="Email">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-ag" for="indicado">Indicado por:</label>
+                        <input id="indicado" type="text" class="form-control form-ag" placeholder="Indicado por">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-ag" for="logradouro">Logradouro</label>
+                        <input id="logradouro" type="text" class="form-control form-ag" placeholder="Logradouro">
+                    </div>
+
+                </div>
+
+              <div class="row">
+
+                  <div class="form-group">
+                      <label class="form-ag" for="complemento">Complemento</label>
+                      <input id="complemento" type="text" class="form-control form-ag" placeholder="Complemento">
+                  </div>
+
+                  <div class="form-group">
+                      <label class="form-ag" for="bairro">Bairro</label>
+                      <input id="bairro" type="text" class="form-control form-ag" placeholder="Bairro">
+                  </div>
+
+                  <div class="form-group">
+                      <label class="form-ag" for="uf">UF</label>
+                      <input id="uf" type="text" class="form-control form-ag" placeholder="UF">
+                  </div>
+
+                  <div class="form-group">
+                      <label class="form-ag" for="cep">CEP</label>
+                      <input id="cep" type="text" class="form-control form-ag" placeholder="CEP">
+                  </div>
+
+                  <div class="form-group">
+                      <label class="form-ag" for="tel">Telefone(s)</label>
+                      <input id="tel" type="text" class="form-control form-ag" placeholder="Telefone(s)">
+                  </div>
+
+                </div>
+
+              <div class="row">
+
+                  <div class="form-group">
+                      <label class="form-ag" for="obs">Observações</label>
+                      <input id="obs" type="text" class="form-control form-ag" placeholder="Observações">
+                  </div>
+
+                </div>
+
+              <div class="row">
+                <label class="form-ag">Dados do Cônjuge</label>
+              </div>
+
+              <div class="row">
+
+                <div class="form-group">
+                  <label class="form-ag" for="nome_c">Nome Cônjuge</label>
+                  <input id="nome_c" type="text" class="form-control form-ag" placeholder="Nome Cônjuge">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-ag" for="dob_C">Data de Nascimento</label>
+                  <input id="dob_C" type="date" class="form-control form-ag" placeholder="Data de Nascimento">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-ag" for="prof_c">Profissão</label>
+                  <input id="prof_c" type="text" class="form-control form-ag" placeholder="Profissão Cônjuge">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-ag" for="tel_c">Telefone(s) Cônjuge</label>
+                  <input id="tel_c" type="text" class="form-control form-ag" placeholder="Telefone(s) Cônjuge">
+                </div>
+
+                <button type="submit" class="btn btn-default gtt-btn">Finalizar Cadastro</button>
+              </div>
+
+            </div>
+
+          </form>
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -49,7 +49,37 @@ body {
 }
 
 .content {
-  padding-top: 10%;
+  /*padding-top: 10%;*/
+  align-items: center;
+  width: 90%;
+  align-self: center;
+  align-content: center;
+}
+
+.form-ag {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: auto;
+}
+
+.gtt-btn {
+  font-family: 'Lato', sans-serif;
+  position:relative;
+  width:auto;
+  background-color: rgb(79, 135, 244);
+  color: white;
+  border-radius: 80px;
+  align-self: center;
+}
+
+#obs {
+  width: 400px;
+  height: 70px;
+}
+
+#menu_bar {
+  margin-right: 10px;
 }
 
 .margin-box {
