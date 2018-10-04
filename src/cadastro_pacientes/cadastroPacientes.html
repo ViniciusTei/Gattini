@@ -8,8 +8,8 @@
     <title>Cadastro Pacientes</title>
 
     <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="estilo.css">
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/estilo.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Advent+Pro" rel="stylesheet">
@@ -29,24 +29,26 @@
 
     <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
 
-      <div id="hd" class="panel panel-heading row">
-        <div>
-          <h1 id="title">GATTINI</h1>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <span class="navbar-brand mb-0 h1">Gattini</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="../menu.html">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="../cadastro_usuarios/cadastroUser.html">Cadastro de Usuários</a>
+            <a class="nav-item nav-link" href="#">Cadastro de Pacientes</a>
+            <a class="nav-item nav-link" href="#">Cadastro de Questionários</a>
+          </div>
         </div>
-      </div>
+      </nav>
 
       <div id="info_cadpac" class="label_center">
         <h3>Cadastro de Pacientes</h3>
       </div>
 
       <div class="content container row">
-
-        <!--Barra lateral -->
-        <div id="menu_bar" class="btn-group-vertical" role="group" aria-label="...">
-          <button type="button" class="btn btn-default">Cadastro de Usuários</button>
-          <button type="button" class="btn btn-default">Cadastro de Pacientes</button>
-          <button type="button" class="btn btn-default">Cadastro de Questionários</button>
-        </div>
 
         <!--Formulário--->
         <div class="content">
@@ -239,8 +241,9 @@
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="cadastroPacientes.js"></script>
   </body>
 </html>

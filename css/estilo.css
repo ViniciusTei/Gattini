@@ -22,8 +22,6 @@ body {
 
 #hd {
   background-color: rgb(79, 135, 244);
-  border-radius: 10px;
-  height: 75px;
 }
 
 .label_center {
@@ -85,11 +83,8 @@ body {
 .margin-box {
   margin-top: 1rem;
   padding: 1rem;
-  border: 2px solid rgb(150, 151, 154);
-  border-radius: 5px;
 }
 
-.borda {
-  border: 1px solid rgb(47, 70, 190);
-
+.margin-box  h3{
+  color: rgb(79, 135, 244);
 }
