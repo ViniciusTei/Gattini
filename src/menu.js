@@ -51,7 +51,7 @@ btnCadPac.addEventListener('click', function () {
   })
 })
 
-function openNewWindow(String path) {
+/*function openNewWindow(String path) {
   var win = new BrowserWindow({
     autoHideMenuBar: true,
     show: false
@@ -67,4 +67,4 @@ function openNewWindow(String path) {
     win.maximize();
     win.show();
   })
-}
+}*/
