@@ -88,3 +88,8 @@ body {
 .margin-box  h3{
   color: rgb(79, 135, 244);
 }
+
+.margin-box2 {
+  margin-top: -1rem;
+  padding: 1srem;
+}
